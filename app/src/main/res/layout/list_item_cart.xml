@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:background="@color/white"
+    android:paddingBottom="5dp">
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/pImage"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="8dp"
+        android:scaleType="fitCenter" >
+    </com.android.volley.toolbox.NetworkImageView>
+
+    <TextView
+        android:id="@+id/pName"
+        android:layout_toRightOf="@+id/pImage"
+        android:layout_marginTop="8dp"
+        android:text="pname"
+        android:textStyle="bold"
+        android:textColor="#383838"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/pPrice"
+        android:layout_below="@+id/pName"
+        android:layout_toRightOf="@+id/pImage"
+        android:text="price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/love"
+        android:layout_below="@+id/pPrice"
+        android:background="@mipmap/ic_love"
+        android:padding="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/pImage"
+        android:layout_width="18dp"
+        android:layout_height="18dp" />
+
+    <TextView
+        android:id="@+id/remove"
+        android:layout_below="@+id/pPrice"
+        android:background="@mipmap/ic_icon_remove"
+        android:padding="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/love"
+        android:layout_width="18dp"
+        android:layout_height="18dp" />
+
+
+</RelativeLayout>

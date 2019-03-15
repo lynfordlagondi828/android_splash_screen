@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/logo"
+            android:text="LynLags"
+            android:fontFamily="monospace"
+            android:textSize="60dp"
+            android:textColor="#7b1fa2"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:layout_height="wrap_content" />
+
+
+
+        <TextView
+            android:id="@+id/label"
+            android:layout_below="@+id/logo"
+            android:text="E-Commerce App Project"
+            android:textColor="#383838"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+    </RelativeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

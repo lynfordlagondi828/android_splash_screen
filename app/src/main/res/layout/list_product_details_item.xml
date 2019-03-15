@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/productName"
+        android:text="Product Name"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="#383838"
+        android:padding="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/productPrice"
+        android:text="Price"
+        android:textColor="#940e22"
+        android:layout_below="@+id/productName"
+        android:padding="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/productImage"
+        android:layout_below="@+id/productPrice"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="2dp"
+        android:scaleType="fitCenter" >
+    </com.android.volley.toolbox.NetworkImageView>
+
+    <TextView
+        android:id="@+id/productDescription"
+        android:layout_below="@+id/productImage"
+        android:padding="2dp"
+        android:text="descrption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/button_add_cart"
+        android:layout_below="@+id/productDescription"
+        android:background="@color/color_add_to_cart"
+        android:layout_margin="5dp"
+        android:text="Add to Cart"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/button_continue_shopping"
+        android:layout_below="@+id/button_add_cart"
+        android:text="Continue Shopping"
+        android:layout_margin="5dp"
+        android:textColor="#fff"
+        android:background="#4a0072"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+</RelativeLayout>
